@@ -15,7 +15,7 @@ L'architecture suit les bonnes pratiques modernes :
 - `/src/components` : Éléments visuels (formulaire ajout + liste de cartes).
 - `/src/models` : Définition de la structure d'une `Card`.
 - `/src/services` : Logique de gestion des données.
-- `/docs` : Documentation technique détaillée (`api.md`, `setup.md`).
+- `/docs` : Documentation technique détaillée (`api.md`, `setup.md`, `best_practices.md`).
 - `/tests` : Test pour garantir la fiabilité du code.
 
 ## Installation et Lancement
