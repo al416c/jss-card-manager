@@ -2,11 +2,12 @@
 
 Ce document recense les conventions de code adoptées pour le projet `jss-card-manager` ainsi que les erreurs courantes et leurs solutions.
 
-## 1. Règles de Nommage (Naming Conventions)
+## 1. Règles de nommage
 
 Pour assurer la lisibilité et la maintenabilité du code, nous suivons ces règles strictes :
 
 ### Fichiers et Dossiers
+
 *   **Composants (React)** : `PascalCase`.  
     *   *Exemple :* `CardItem.js`, `AddCardForm.js`.
     *   *Pourquoi ?* Pour les distinguer visuellement des fichiers de logique pure.
@@ -16,6 +17,7 @@ Pour assurer la lisibilité et la maintenabilité du code, nous suivons ces règ
     *   *Exemple :* `components/`, `services/`.
 
 ### Variables et Fonctions
+
 *   **Variables** : `camelCase`. Doivent être explicites et en anglais.
     *   *Bon :* `cardList`, `userScore`.
     *   *Mauvais :* `c`, `liste`, `variable1`.
@@ -23,10 +25,6 @@ Pour assurer la lisibilité et la maintenabilité du code, nous suivons ces règ
     *   *Exemple :* `getCardById()`, `addCardToCollection()`, `calculateTotalValue()`.
 *   **Constantes** : `UPPER_SNAKE_CASE`. Pour les valeurs fixes.
     *   *Exemple :* `MAX_CARDS_PER_PAGE = 20`.
-
-### Commentaires
-*   Utiliser des **JSDoc** pour les fonctions complexes (décrire les paramètres et le retour).
-*   Commenter le *pourquoi* d'une logique complexe, pas le *comment* (le code doit être assez clair).
 
 ---
 
@@ -56,8 +54,4 @@ Voici 3 erreurs courantes qu'un développeur peut rencontrer sur ce projet, comm
 *   **Le problème :** Utiliser une variable `cardName` alors qu'elle a été déclarée comme `cardTitle`.
 *   **Détection :**
     *   **Console du navigateur :** Erreur rouge explicite : `Uncaught ReferenceError: cardName is not defined`.
-    *   **IDE :** La variable apparaît souvent en gris (non utilisée) ou soulignée si l'IDE est bien configuré.
-*   **Correction :**
-    *   Bien relire les noms de variables.
-    *   Utiliser le copier-coller pour éviter les typos.
-    *   Installer un "Linter" (comme ESLint) qui prévient avant même de lancer le code.
+    *   **IDE :** La variable apparaît souvent en gris ou soulignée si l'IDE est bien configuré.
